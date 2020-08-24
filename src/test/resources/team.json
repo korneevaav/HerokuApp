@@ -1,0 +1,16 @@
+{
+  "team": [
+    {
+      "name": "Nastya Korneeva",
+      "age": 22,
+      "is_student": true,
+      "completed_homework": [1, 2, 3, 4, 5]
+    },
+    {
+      "name": "Dmitry Rak",
+      "age": 28,
+      "is_student": false,
+      "completed_homework": null
+    }
+  ]
+}
