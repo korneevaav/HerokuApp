@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="HerokuApp" target="1.5" />
+      <module name="HerokuApp" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

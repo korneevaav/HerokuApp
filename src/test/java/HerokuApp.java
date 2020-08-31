@@ -1,5 +1,3 @@
-package test.java;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
@@ -33,7 +31,5 @@ public class HerokuApp {
         browser.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         browser.findElement(By.name("name")).click();
         browser.quit();
-
-
     }
 }
