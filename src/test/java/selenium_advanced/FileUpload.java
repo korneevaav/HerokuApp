@@ -3,6 +3,7 @@ package selenium_advanced;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class FileUpload {
@@ -19,6 +20,11 @@ public class FileUpload {
         driver.findElement(By.id("file-upload")).sendKeys(filePath);
 
         driver.findElement(By.id("file-submit")).click();
+
+        // Now check file name
+        String actFileName = driver.findElement(By.id("uploaded-files")).getText();
+
+        Assert.assertEquals(actFileName, "cat.jpg");
 
         driver.close();
     }

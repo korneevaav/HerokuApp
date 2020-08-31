@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 import java.io.File;
 import java.util.HashMap;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class FileDownload {
     private WebDriver driver;
@@ -33,6 +34,9 @@ public class FileDownload {
 
         WebElement element = list.get(list.size()-1);
         element.click();
+
+        // Wait for file download...
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         File folder = new File(System.getProperty("user.dir"));
 
